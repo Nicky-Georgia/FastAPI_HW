@@ -1,5 +1,5 @@
 # FastAPI_HW
-## Wet clinic API deploy
+## Vet clinic API deploy
 
 It's a study project for "Developing Tools" course. We create a microservice for storing and uploading data of dogs based OpenAPI standart.
 
