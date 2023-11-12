@@ -91,15 +91,6 @@ def get_dog_by_pk(pk: int) -> Dog:
         if dog.pk == pk:
             return dog
 
-'''dogs/{kind} Get Dog By Kind'''
-
-
-@app.get('/dogs/{kind}', summary='Get Dogs By Kind', response_model=List[Dog])
-def get_dogs_by_kind(kind: str) -> List[Dog]:
-    local_dogs = [dog for dog in dogs_db.values() if dog.kind == kind]
-    if local_dogs:
-        return local_dogs
-
 
 '''/dog/{pk} Update Dog'''
 
