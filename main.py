@@ -90,7 +90,17 @@ def get_dog_by_pk(pk: int) -> Dog:
     for dog in dogs_db.values():
         if dog.pk == pk:
             return dog
-        
+
+
+'''/dog/kind Get Dog By Kind'''
+
+
+@app.get('/dog/kind', summary='Get Dog By kind')
+def get_dog_by_kind(kind: str) -> Dog:
+    for dog in dogs_db.values():
+        if dog.kind == kind:
+            return dog
+
 
 '''/dog/{pk} Update Dog'''
 
